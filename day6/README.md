@@ -65,6 +65,12 @@ let gradesWithHomeroom = {
     ...grades,
     homeroom: 91
 };
+
+// Rest operator in a function: take in a username, and the *rest* of the user's other info
+function getUserInfo(username, ...otherInfo) {
+    console.log(username);
+    console.log(otherInfo);
+}
 ```
 
 ### Default Parameters
