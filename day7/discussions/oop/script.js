@@ -1,70 +1,69 @@
 // // Classes
-
-// class Car {
-//     constructor(name, year) {
-//         this.name = name;
-//         this.year = year;
-//     }
-// }
+class Car {
+    constructor(name, year) {
+        this.name = name;
+        this.year = year;
+    }
+}
 
 // // Instantiation
-// const myCar = new Car("Toyota", 2023);
-// const anotherCar = new Car("VW", 2023);
+const myCar = new Car("Toyota", 2023);
+const anotherCar = new Car("VW", 2023);
 
 // // Property access
-// console.log(myCar.name);
-// console.log(anotherCar.year);
+console.log(myCar.name);
+console.log(anotherCar.year);
 
 // // Constructor function
-// function Person(name, age) {
-//     this.name = name;
-//     this.age = age;
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
 
-//     this.greet = function() {
-//         console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`)
-//     }
-// }
+    this.greet = function() {
+        console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`)
+    }
+}
 
 // // Creating instances of Person objects
-// const person1 = new Person("Joe", 18);
-// const person2 = new Person("Aaron", 17);
+const person1 = new Person("Joe", 18);
+const person2 = new Person("Aaron", 17);
 
-// person1.greet();
-// person2.greet();
+person1.greet();
+person2.greet();
 
 // // Encapsulation
-// class BankAccount {
-//     constructor(accountNumber, balance) {
-//         this.accountNumber = accountNumber;
-//         this.balance = balance;
-//     }
+class BankAccount {
+    constructor(accountNumber, balance) {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+    }
 
-//     deposit(amount) {
-//         this.balance += amount;
-//     }
+    deposit(amount) {
+        this.balance += amount;
+    }
 
-//     withdraw(amount) {
-//         if (this.balance < amount) {
-//             console.log("Insufficient balance");
-//             return;
-//         }
-//         this.balance -= amount;
-//     }
+    withdraw(amount) {
+        if (this.balance < amount) {
+            console.log("Insufficient balance");
+            return;
+        }
+        this.balance -= amount;
+    }
 
-//     getAccountInfo() {
-//         return `Account Number: ${this.accountNumber},
-//         Balance: ${this.balance}`;
-//     }
-// }
+    getAccountInfo() {
+        return `Account Number: ${this.accountNumber},
+        Balance: ${this.balance}`;
+    }
+}
 
-// const myAccount = new BankAccount("123456789", 1000);
-// myAccount.deposit(500);
-// console.log(myAccount.balance);
+const myAccount = new BankAccount("123456789", 1000);
+myAccount.deposit(500);
+console.log(myAccount.balance);
 
-// myAccount.withdraw(1500);
-// console.log(myAccount.getAccountInfo());
+myAccount.withdraw(1500);
+console.log(myAccount.getAccountInfo());
 
-// myAccount.withdraw(500);
+myAccount.withdraw(500);
 
 // Inheritance
 class Animal {
