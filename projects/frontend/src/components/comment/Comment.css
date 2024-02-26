@@ -1,0 +1,22 @@
+.comment {
+    display: flex;
+}
+
+.comment__userpic-container {
+    width: 10%;
+}
+
+.comment__userpic {
+    border-radius: 50%;
+    width: 64px;
+}
+
+.comment__body {
+    width: 90%;
+    text-align: left;
+}
+
+.comment__username {
+    font-weight: bold;
+    margin-right: 5px;
+}
