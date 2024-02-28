@@ -1,5 +1,5 @@
 import React from "react";
-import Comment from "./comment/Comment.js";
+import Comment from "./comment/Comment";
 import Image1 from "../assets/images/199-128x128.jpg";
 import Image2 from "../assets/images/302-128x128.jpg";
 import Image3 from "../assets/images/574-128x128.jpg";
